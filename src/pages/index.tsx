@@ -21,7 +21,7 @@ type Props = {
 
 const Home = ({ deviceType }: Props) => {
   const url = '/';
-  const title = 'The Real Estate Disrupter';
+  const title = 'The Real Estate Disrupters';
 
   const productServerUrl: any = process.env.NEXT_PUBLIC_SERVER_URL + '/product';
   const { error, data } = useSWR(productServerUrl, fetcher);
