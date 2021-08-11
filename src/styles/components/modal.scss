@@ -1,0 +1,173 @@
+.modal-dialog {
+  font-family: 'Montserrat-Light';
+
+  .modal-content {
+    background-color: $modal-background;
+    color: $Secondary;
+    border-radius: 16px;
+    padding: 2.5rem;
+    
+    .modal-header {
+      padding: 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $modal-seperator;
+
+      .close {
+        padding: 0;
+        text-shadow: none;
+        color: #fff;
+        font-weight: 100;
+        opacity: 1;
+        font-size: 2rem;
+        margin: -1.5rem -1.5rem auto auto;
+      }
+    }
+
+    .modal-body {
+      padding: 1rem 0;
+      border-bottom: 1px solid $modal-seperator;
+
+      .label {
+        color: $modal-label;
+        font-size: 17px;
+      }
+
+      .success-info {
+        text-align: center;
+        font-size: 32px;
+      }
+
+      .value {
+        color: $Secondary;
+        font-size: 22px;
+        
+        .form-check {
+          font-size: 17px;
+        }
+      }
+      
+      .offer-value-name {
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .form-heading {
+        font-size: 14px;
+      }
+
+      .info {
+        font-size: 13px;
+      }
+
+      .textarea-formcontrol {
+        padding: 14px;
+      }
+
+      // .btn-secondary {
+      //   color: #fff;
+      //   background-color: $Ternary;
+      //   border-color: $Ternary-hover;
+      //   font-size: 14px;
+      //   font-family: 'Montserrat';
+      // }
+
+      // .cancel-btn.btn-secondary {
+      //   background-color: transparent;
+      //   border-color: $Secondary;
+      // }
+    
+      // .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+      //   background-color: $Ternary-hover!important;
+      //   border-color: $Ternary-hover!important;
+      // }
+    
+      // .btn-secondary:not(:disabled):not(.disabled):active {
+      //   background-color: $Ternary-hover;
+      //   border-color: $Ternary-hover;
+      // }
+
+      .delete-heading {
+        font-size: 37px;
+        font-family: 'Montserrat-Light';
+      }
+
+      .delete-desc {
+        font-size: 18px;
+        font-family: 'Montserrat-Light';
+      }
+
+      .form-control {
+        font-size: 15px;
+      }
+
+      // log in container
+    
+      .auth-container {
+        text-align: center;
+        background-color: $auth-background;
+        border-radius: 8px;
+        padding: 5%;
+    
+        .row {
+          margin: 0 auto;
+          margin-bottom: 0.5rem;
+        }
+    
+        .heading {
+          font-family: 'Montserrat-Light';
+          font-size: 37px;
+        }
+    
+        .desc {
+          font-family: 'Montserrat-Light';
+          font-size: 18px;
+        }
+    
+        // .btn-secondary {
+        //   color: #fff;
+        //   background-color: $Ternary;
+        //   border-color: $Ternary-hover;
+        //   font-size: 16px;
+        //   font-family: 'Montserrat';
+        // }
+      
+        // .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+        //   background-color: $Ternary-hover!important;
+        //   border-color: $Ternary-hover!important;
+        // }
+      
+        // .btn-secondary:not(:disabled):not(.disabled):active {
+        //   background-color: $Ternary-hover;
+        //   border-color: $Ternary-hover;
+        // }
+    
+        .link-content {
+          font-family: 'Montserrat-Light';
+          font-size: 15px;
+          color: $Secondary;
+          
+          .link {
+            color: $Ternary;
+          }
+        }
+    
+        .invalid-feedback {
+          text-align: left;
+        }
+    
+        .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+          color: $Secondary;
+        }
+      }
+    }
+
+    .no-border {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    .confirm-delete-modal {
+      border-bottom: none;
+    }
+  }
+}

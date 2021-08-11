@@ -1,0 +1,39 @@
+footer {
+  background-color: $Primary;
+  padding: 2rem 0;
+  margin-top: -1px;
+  border-top: 2px solid $navbar-border;
+
+  a:hover, a.nav-link.active {
+    color: $Ternary;
+  }
+  
+  a.nav-link {
+    padding: .5rem 2rem;
+  }
+
+  .flex-container {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.spacer-div {
+    display: flex;
+    margin-right: auto;
+    visibility: hidden;
+  }
+
+  div.copy-right {
+    display: flex;
+    margin-top: 1.5rem!important;
+    font-size: 0.75rem;
+  }
+
+  div.up-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+}

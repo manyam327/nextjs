@@ -1,0 +1,78 @@
+/*Navbar Right Side Collapse */
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+      position: fixed;
+      top: 70px;
+      right: 0;
+      padding: 10%;
+      width: 75%;
+      height: 100%;
+      background-color: $Primary;
+  }
+
+  .navbar-collapse.collapsing {
+      right: -75%;
+      transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+      right: 0;
+      transition: right 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+      transition: right 300ms ease-in-out;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 768px) {
+  .navbar {
+    padding: .5rem 0rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .navbar {
+    padding: .5rem 0rem;
+  }
+}
+
+.navbar-brand {
+  font-size: 34px;
+  font-weight: 700;
+
+  div:first-child{
+    vertical-align: middle;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    color: $Secondary!important;
+  }
+
+  .nav-link:focus, .nav-link:hover, .nav-link.active {
+    color: $Ternary!important;
+  }
+  
+}
+
+nav {
+  .dropdown-toggle::after {
+    border: 0;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: $Ternary;
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    background-color: $Ternary-active;
+  }
+
+  &.dark-bg {
+    background-color: $Primary;
+    border-bottom: 2px solid $navbar-border;
+  }
+}

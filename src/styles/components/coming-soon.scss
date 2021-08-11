@@ -1,0 +1,36 @@
+.coming-soon {
+  background-color: $Primary;
+  color: $Secondary;
+  min-height: calc(100vh - 228.58px);
+  padding: 5%;
+  font-family: 'Montserrat-Light';
+
+  .container-md {
+    display: flex;
+    justify-content: center;
+  }
+
+  .coming-soon-container {
+    text-align: center;
+
+    .name {
+      font-size: 28px;
+
+      .heading {
+        color: $Ternary;
+      }
+    }
+
+    .main-heading {
+      font-size: 82px;
+    }
+
+    .desc {
+      font-size: 20px;
+      
+      .link {
+        color: $Ternary;
+      }
+    }
+  }
+}

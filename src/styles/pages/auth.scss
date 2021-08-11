@@ -1,0 +1,113 @@
+.auth-section {
+  background-color: $Primary;
+  color: $Secondary;
+  min-height: calc(100vh - 228.58px);
+  padding: 5%;
+
+  .container-md {
+    display: flex;
+    justify-content: center;
+  }
+
+  .auth-container {
+    text-align: center;
+    background-color: $auth-background;
+    border-radius: 8px;
+    width: 500px;
+    padding: 5%;
+
+    .row {
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .heading {
+      font-family: 'Montserrat-Light';
+      font-size: 37px;
+    }
+
+    .desc {
+      font-family: 'Montserrat-Light';
+      font-size: 18px;
+    }
+
+    // .btn-secondary {
+    //   color: #fff;
+    //   background-color: $Ternary;
+    //   border-color: $Ternary-hover;
+    //   font-size: 16px;
+    //   font-family: 'Montserrat';
+    // }
+  
+    // .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    //   background-color: $Ternary-hover!important;
+    //   border-color: $Ternary-hover!important;
+    // }
+  
+    // .btn-secondary:not(:disabled):not(.disabled):active {
+    //   background-color: $Ternary-hover;
+    //   border-color: $Ternary-hover;
+    // }
+
+    .link-content {
+      font-family: 'Montserrat-Light';
+      font-size: 15px;
+      color: $Secondary;
+      
+      .link {
+        color: $Ternary;
+      }
+    }
+
+    .invalid-feedback {
+      text-align: left;
+    }
+
+    .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+      color: $Secondary;
+    }
+  }
+}
+
+// Common Form Control 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $Secondary!important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $Secondary!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $Secondary!important;
+}
+
+.form-control {
+  font-family: 'Montserrat-Light';
+  font-size: 17px;
+  color: $Secondary;
+  background-color: $form-input-background;
+  border: 1px solid $navbar-border;
+  border-radius: 8px;
+  width: 100%;
+  padding: 1.5rem 1rem;
+
+  &:focus {
+    color: $Secondary;
+    background-color: $form-input-background;
+    border-color: $Ternary-active;
+    box-shadow: none;
+  }
+}
+
+.form-check {
+  font-family: 'Montserrat-Light';
+  font-size: 15px;
+  color: $Secondary;
+  
+}
+
+// form.was-validated .form-check{
+//   padding-left: 0;
+// }

@@ -1,0 +1,41 @@
+.success-fee-agreement {
+  background-color: $Secondary;
+  padding: 5%;
+  min-height: calc(100vh - 228.58px);
+
+  .heading {
+    color: $Ternary;
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 4%;
+
+    @media (max-width: 1920px) {
+      font-size: 36px;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 27px;
+      margin-top: 4%;
+    }
+
+    @media (max-width: 330px) {
+      font-size: 24px;
+      margin-top: 2%;
+    }
+  }
+
+  .desc {
+    color: $Section-6-Desc;
+    font-family: 'Montserrat-Light';
+    font-size: 22px;
+
+    @media (max-width: 1920px) {
+      font-size: 20px;
+    }
+    
+    @media (max-width: 330px) {
+      font-size: 18px;
+    }
+  }
+}

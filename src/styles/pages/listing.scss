@@ -1,0 +1,394 @@
+.listing-section {
+  background-color: $Primary;
+  color: $Secondary;
+
+  .search-section {
+    .heading {
+      font-family: 'Montserrat-Light';
+      font-size: 37px;
+      
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+    }
+
+    .form-control {
+      background-color: $listing-search-bg;
+      color: $listing-search;
+      font-size: 15px;
+      padding: .375rem 1rem;
+      border: none;
+    }
+
+    // .btn {
+    //   font-family: 'Montserrat';
+    //   font-size: 11px;
+    //   font-weight: 200;
+    //   padding: 10px 20px;
+    //   border-radius: 8px; 
+    // }
+
+    // .btn-secondary {
+    //   color: #fff;
+    //   background-color: $Ternary;
+    //   border-color: $Ternary-hover;
+    // }
+
+    // .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    //   background-color: $Ternary-hover!important;
+    //   border-color: $Ternary-hover!important;
+    // }
+
+    // .btn-secondary:not(:disabled):not(.disabled):active {
+    //   background-color: $Ternary-hover;
+    //   border-color: $Ternary-hover;
+    // }
+  }
+
+  .listing-table {
+    .listing-table-heading {
+      display: flex;
+      font-size: 28px;
+      font-family: 'Montserrat-Light';
+      justify-content: space-between;
+      border-bottom: 1px solid $Section-5-seperater;
+
+      small {
+        font-size: 15px;
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+
+      .sort {
+        select {
+          background: $Primary url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 4L0 1h4z'/%3e%3c/svg%3e") right .75rem center/8px 10px no-repeat;
+          color: $Secondary;
+          border: none;
+        }
+
+        option {
+          color: $Primary;
+          background: $Secondary;
+        }
+
+        option:hover {
+          color: $Secondary;
+          background-color: $Ternary;
+        }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
+    }
+
+    .infinite-scroll-component {
+      overflow: hidden !important;
+    }
+  }
+}
+
+.listing-row {
+  font-family: 'Montserrat-Light';
+
+  // .image-col {
+  //   padding: 0;
+  // }
+
+  .image {
+    width: 100%;
+    
+    img {
+      border-radius: 16px;
+    }
+  }
+
+  .id {
+    color: $listing-id;
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .heading {
+    font-size: 28px;
+
+    @media (max-width: 768px) {
+      font-size: 23px;
+    }
+
+    &:hover {
+      color: $Ternary;
+    }
+  }
+
+  .price-heading {
+    font-size: 18px;
+  }
+
+  .have-wants, .desc {
+    font-size: 18px;
+  }
+
+  .desc {
+    width: 90%;
+    line-height: 1.25;
+  }
+
+  .pro-active {
+    font-size: 10px;
+    background-color: $listing-pro-active;
+    padding: 5px 10px;
+    border-radius: 32px;
+  }
+
+  .bg-right:nth-child(odd) {
+    border-right: 1px solid $Section-5-seperater;
+  }
+
+  .bg-bottom {
+    border-bottom: 1px solid $Section-5-seperater;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+}
+
+.logo {
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: $Secondary;
+    width: fit-content;
+    padding: 5px;
+
+    &.AS {
+      background-color: $assets;
+    }
+
+    &.BO {
+      background-color: $business-opportunities;
+    }
+    
+    &.FI {
+      background-color: $finance;
+    }
+
+    &.IP {
+      background-color: $income-property;
+    }
+
+    &.IN {
+      background-color: $international;
+    }
+
+    &.LA {
+      background-color: $land;
+    }
+
+    &.RE {
+      background-color: $residences;
+    }
+
+    &.CO {
+      background-color: $crypto-opportunities;
+    }
+
+    &.OT {
+      background-color: $other;
+    }
+  }
+
+.listitem-section {
+  background-color: $Primary;
+  color: $Secondary;
+  font-family: 'Montserrat-Light';
+  padding: 5% 0;
+
+  .view-listing {
+    button {
+      border: 1px solid $Section-5-seperater;
+      border-radius: 3px;
+      padding: 4px 13px;
+    }
+    
+    .view-listing-text {
+      font-size: 17px;
+      display: inline;
+      cursor: pointer;
+
+      &:hover {
+        color: $Ternary;
+      }
+    }
+  }
+
+  .list-details {
+    border-bottom: 1px solid $Section-5-seperater;
+
+    .id {
+      color: $listing-id;
+      font-size: 18px;
+
+      @media (max-width: 375px) {
+        font-size: 16px;
+      }
+    }
+
+    .heading {
+      color: $Secondary;
+      font-size: 48px;
+
+      @media (max-width: 768px) {
+        font-size: 34px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 23px;
+      }
+    }
+
+    .price {
+      color: $Ternary;
+      font-size: 33px;
+
+      @media (max-width: 375px) {
+        font-size: 18px;
+      }
+    }
+
+    .pro-active {
+      font-size: 10px;
+      background-color: $listing-pro-active;
+      color: $Secondary;
+      padding: 5px 10px;
+      border-radius: 32px;
+    }
+
+    .have-wants {
+      font-size: 17px;
+    }
+
+    .social-button-group {
+      button {
+        padding: 6px 12px;
+        border-radius: 16px;
+        color: $Secondary;
+        border: none;
+        font-family: 'Montserrat-Light';
+        font-size: 14px;
+      }
+
+      .facebook {
+        background-color: $facebook;
+      }
+
+      .twitter {
+        background-color: $twitter;
+      }
+
+      .copy-link {
+        background-color: $copy-link;
+      }
+    }
+
+    .bg-top {
+      border-top: 1px solid $Section-5-seperater;
+
+      .details-div {
+        max-height: calc(100% - 40px);
+        overflow-y: auto;
+
+        .heading {
+          font-family: 'Montserrat-Bold';
+          font-size: 22px;
+          color: $Secondary;
+
+          @media (max-width: 375px) {
+            font-size: 18px;
+          }
+        }
+
+        .desc {
+          font-family: 'Montserrat-Light';
+          font-size: 18px;
+          color: $Secondary;
+          line-height: 1.25;
+
+          @media (max-width: 768px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .image {
+      width: 100%;
+      
+      img {
+        border-radius: 16px;
+      }
+    }
+
+    // .btn {
+    //   font-family: 'Montserrat';
+    //   font-size: 11px;
+    //   font-weight: 200;
+    //   padding: 10px 20px;
+    //   border-radius: 8px; 
+    // }
+
+    // .btn-secondary {
+    //   color: $Secondary;
+    //   background-color: $Ternary;
+    //   border-color: $Ternary-hover;
+    // }
+
+    // .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    //   background-color: $Ternary-hover;
+    //   border-color: $Ternary-hover;
+    // }
+
+    // .btn-secondary:not(:disabled):not(.disabled):active {
+    //   background-color: $Ternary-hover;
+    //   border-color: $Ternary-hover;
+    // }
+
+    .contact-owner-btn {
+      color: $Secondary;
+      background-color: transparent;
+      border-color: $Secondary;
+    }
+
+    // .contact-owner-btn:hover, .contact-owner-btn:focus, .contact-owner-btn:active {
+    //   background-color: transparent;
+    //   border-color: $Secondary;
+    // }
+
+    // .contact-owner-btn:not(:disabled):not(.disabled):active {
+    //   background-color: $Ternary-hover;
+    //   border-color: $Ternary-hover;
+    // }
+  }
+
+  .similar-listing {
+    color: $Secondary;
+
+    .similar-listing-heading {
+      font-family: 'Montserrat-Bold';
+      font-size: 37px;
+      border-bottom: 1px solid $Section-5-seperater;
+      
+      @media (max-width: 768px) {
+        font-size: 34px;
+      }
+  
+      @media (max-width: 375px) {
+        font-size: 26px;
+      }
+    }
+  }
+}
