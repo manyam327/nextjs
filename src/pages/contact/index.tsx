@@ -36,8 +36,8 @@ export default function Contact({ alertRef }: Props) {
     await postFetcher(
       fetchUrl,
       {
-        name,
-        email,
+        names,
+        emails,
         message: message.trim()
       },
       {},
