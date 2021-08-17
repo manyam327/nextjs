@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git ''
+        git 'https://github.com/madhuri293/nextjs'
       }
     }
     stage('Build') {
