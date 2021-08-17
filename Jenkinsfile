@@ -5,6 +5,13 @@ pipeline{
     dockerImage = ''
   }
   agent any
+  tools {nodejs "node" }
+  stages {
+    stage('Cloning Git') {
+      steps {
+        git 'https://github.com/madhuri293/nextjs'
+      }
+    }
     stages {
         stage('Build'){
            steps{
