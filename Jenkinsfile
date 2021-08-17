@@ -12,7 +12,6 @@ pipeline{
         git 'https://github.com/madhuri293/nextjs'
       }
     }
-    stages {
         stage('Build'){
            steps{
               script{
